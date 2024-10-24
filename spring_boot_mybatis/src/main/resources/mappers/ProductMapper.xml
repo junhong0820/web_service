@@ -44,7 +44,7 @@
 	
 	<!-- 상품정보 삭제 : 조건문 없으면 모든 레코드 삭제됨 (주의) -->
 	<delete id="deleteProduct" parameterType="string">
-		DELETE FROM product2 WHERE prdNo=#{prdNo}
+		DELETE FROM product WHERE prdNo=#{prdNo}
 	</delete>
 	
 	<!-- 상품번호 중복 확인 : 매개변수로 전달된 번호를 이용해서 select 후 조회되는 값이 있는지 확인
