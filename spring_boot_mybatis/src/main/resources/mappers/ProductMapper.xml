@@ -59,6 +59,7 @@
 		 제조사 검색 prdCompany like '%삼성%'
 		 상품명 검색 prdName like '%모니터%'
 	  -->
+	  <!-- webhook test -->
 	<select id="productSearch" parameterType="hashmap" resultMap="prdResult">
 		SELECT * FROM product WHERE
 			<choose>
